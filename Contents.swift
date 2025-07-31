@@ -74,7 +74,7 @@ if favoriteGenres.contains(findFavorite) {
 }
 
 var favoriteGenresArray: [String] = Array(favoriteGenres)
-print(favoriteGenres)
+//print(favoriteGenres)
 print("favoriteGenresArray:", favoriteGenresArray)
 
 // 6. Date mulpulatoin
@@ -87,9 +87,19 @@ print("current date with new MM/dd/yyyy formart:", dateFormarter.string(from: cu
 // convert to Date obj
 var userDate = "08/24/2024"
 dateFormarter.dateFormat = "MM/dd/yyyy"
+dateFormarter.timeZone = TimeZone(identifier: "Asia/Phnom_Penh")
 if let dateObj = dateFormarter.date(from: userDate) {
     print("Converted date:", dateObj)
 }else{
     print("Converted date failed!")
 }
+
+
+
+
+
+
+
+
+
 
